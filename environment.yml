@@ -1,0 +1,17 @@
+name: vector_embeddings_app
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.9
+  - streamlit
+  - pandas
+  - numpy
+  - scikit-learn
+  - plotly
+  - nltk
+  - python-dotenv
+  - pip
+  - pip:
+    - nomic
+    - umap-learn
