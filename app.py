@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import sklearn
+import plotly
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.manifold import TSNE
 import plotly.graph_objs as go
