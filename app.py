@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import sklearn
-import plotly
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.manifold import TSNE
 import plotly.graph_objs as go
@@ -13,11 +11,13 @@ import os
 from dotenv import load_dotenv
 import umap
 
-# Load environment variables
-load_dotenv()
+# # Load environment variables
+# load_dotenv()
 
-# Get Nomic API token
-NOMIC_API_TOKEN = os.getenv('NOMIC_API_TOKEN')
+# # Get Nomic API token
+# NOMIC_API_TOKEN = os.getenv('NOMIC_API_TOKEN')
+
+NOMIC_API_TOKEN = st.secrets["NOMIC_API_TOKEN"]
 
 # Configure Nomic with API token
 nomic.login(NOMIC_API_TOKEN)
