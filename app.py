@@ -5,6 +5,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.manifold import TSNE
 import plotly.graph_objs as go
 from nomic import embed
+# from nomic import atlas
 import nomic
 import nltk
 import os
